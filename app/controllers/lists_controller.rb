@@ -1,6 +1,7 @@
 class ListsController < ApplicationController
 
   def index
+    @lists = List.sorted
   end
 
   def show

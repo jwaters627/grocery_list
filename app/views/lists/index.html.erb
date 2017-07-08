@@ -1,2 +1,21 @@
-<h1>Lists#index</h1>
-<p>Find me in app/views/lists/index.html.erb</p>
+<h1>Lists</h1>
+
+<div class="lists index">
+		<h2>Lists</h2>
+
+		<% link_to("Add New Subject", '#', :class => 'action new') %>
+
+		<table class="listing" summary "Lists list">
+			<tr class="header">
+				<th>#</th>
+				<th>List</th>
+			</tr>
+
+			<% @lists.each do |list| %>
+			<tr>
+				<td><%= list.position%></td>
+				<td><%= list.name%></td>
+			</tr>
+			<% end %>
+		</table>
+	</div>
