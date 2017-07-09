@@ -2180,3 +2180,1809 @@ Processing by ListsController#index as
 Completed 200 OK in 45ms (Views: 33.1ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/lists/1/edit" for 127.0.0.1 at 2017-07-08 22:05:42 -0400
+Processing by ListsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT  `lists`.* FROM `lists` WHERE `lists`.`id` = 1 LIMIT 1[0m
+  Rendering lists/edit.html.erb within layouts/application
+  Rendered lists/edit.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 41ms (Views: 20.7ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:05:43 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 28ms (Views: 25.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/lists/2/edit" for 127.0.0.1 at 2017-07-08 22:05:48 -0400
+Processing by ListsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT  `lists`.* FROM `lists` WHERE `lists`.`id` = 2 LIMIT 1[0m
+  Rendering lists/edit.html.erb within layouts/application
+  Rendered lists/edit.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 32ms (Views: 29.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:05:49 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:09:52 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    18: 
+    19: 				<td><%= link_to(list.name, edit_list_path(list.id), :class => 'action edit') %></td>
+    20: 				<td>
+    21: 					<%= form_for(@list, :method => 'delete') do |f| %>
+    22: 						<%= f.submit("Delete Subject") %>
+    23: 						<% end %>
+    24: 				</td>
+  
+app/views/lists/index.html.erb:21:in `block in _app_views_lists_index_html_erb___3518462442649615481_70258102889580'
+app/views/lists/index.html.erb:15:in `_app_views_lists_index_html_erb___3518462442649615481_70258102889580'
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:10:07 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    18: 
+    19: 				<td><%= link_to(list.name, edit_list_path(list.id), :class => 'action edit') %></td>
+    20: 				<td>
+    21: 					<%= form_for(@list, :method => 'delete') do |f| %>
+    22: 						<div>
+    23: 							<%= f.submit("Delete Subject") %>
+    24: 						<div>
+  
+app/views/lists/index.html.erb:21:in `block in _app_views_lists_index_html_erb___3518462442649615481_70258021355480'
+app/views/lists/index.html.erb:15:in `_app_views_lists_index_html_erb___3518462442649615481_70258021355480'
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:10:29 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    18: 
+    19: 				<td><%= link_to(list.name, edit_list_path(list.id), :class => 'action edit') %></td>
+    20: 				<td>
+    21: 					<%= form_for(@list, :method => 'delete') do |f| %>
+    22: 						<table />
+    23: 						<div>
+    24: 							<%= f.submit("Delete Subject") %>
+  
+app/views/lists/index.html.erb:21:in `block in _app_views_lists_index_html_erb___3518462442649615481_70258073123180'
+app/views/lists/index.html.erb:15:in `_app_views_lists_index_html_erb___3518462442649615481_70258073123180'
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:13:46 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 24ms (Views: 21.3ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/lists/4" for 127.0.0.1 at 2017-07-08 22:13:50 -0400
+Processing by ListsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"L53oA3Vi+AU2c7htNqBiG+UDV901TPWx/CDuaugouVk8QGvPP16L7Eiy/59InKGtNDEYFMDTVZLg+woBTxAJ1Q==", "id"=>"4"}
+No template found for ListsController#destroy, rendering head :no_content
+Completed 204 No Content in 48ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:15:15 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 34ms (Views: 26.1ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/lists/4" for 127.0.0.1 at 2017-07-08 22:15:17 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/lists/4"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:15:52 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  Rendered lists/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/jswaters/Sites/grocery_list/app/views/lists/index.html.erb:21: syntax error, unexpected ':'
+...to "delete", list, :method => : 'destroy' );@output_buffer.s...
+...                               ^):
+  
+app/views/lists/index.html.erb:21: syntax error, unexpected ':'
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:16:01 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  Rendered lists/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/jswaters/Sites/grocery_list/app/views/lists/index.html.erb:21: syntax error, unexpected ':'
+...to "delete", list, :method => : :destroy );@output_buffer.sa...
+...                               ^):
+  
+app/views/lists/index.html.erb:21: syntax error, unexpected ':'
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:16:16 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 25ms (Views: 22.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/lists/4" for 127.0.0.1 at 2017-07-08 22:16:18 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/lists/4"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:17:04 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 38ms (Views: 36.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/lists/4" for 127.0.0.1 at 2017-07-08 22:17:06 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/lists/4"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:17:14 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 25ms (Views: 22.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/lists/4" for 127.0.0.1 at 2017-07-08 22:17:15 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/lists/4"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:20:04 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  Rendered lists/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/jswaters/Sites/grocery_list/app/views/lists/index.html.erb:21: syntax error, unexpected '(', expecting ')'
+...list_path, :method => :destroy(list.id) );@output_buffer.saf...
+...                               ^
+/Users/jswaters/Sites/grocery_list/app/views/lists/index.html.erb:21: syntax error, unexpected ')', expecting keyword_end
+... :method => :destroy(list.id) );@output_buffer.safe_append='
+...                               ^):
+  
+app/views/lists/index.html.erb:21: syntax error, unexpected '(', expecting ')'
+app/views/lists/index.html.erb:21: syntax error, unexpected ')', expecting keyword_end
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:20:16 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"lists"}, missing required keys: [:id]):
+    18: 
+    19: 				<td><%= link_to(list.name, edit_list_path(list.id), :class => 'action edit') %></td>
+    20: 				<td>
+    21: 					<%= button_to "delete", list_path, :method => destroy(list.id) %>
+    22: 					<%= link_to("X", '#', :class => 'action delete') %>
+    23: 			</tr>
+    24: 			<% end %>
+  
+app/views/lists/index.html.erb:21:in `block in _app_views_lists_index_html_erb___3518462442649615481_70258083379380'
+app/views/lists/index.html.erb:15:in `_app_views_lists_index_html_erb___3518462442649615481_70258083379380'
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:20:33 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  Rendered lists/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/jswaters/Sites/grocery_list/app/views/lists/index.html.erb:21: syntax error, unexpected '(', expecting ')'
+...list_path, :method => :destroy(:id => list.id) );@output_buf...
+...                               ^
+/Users/jswaters/Sites/grocery_list/app/views/lists/index.html.erb:21: syntax error, unexpected ')', expecting keyword_end
+...d => :destroy(:id => list.id) );@output_buffer.safe_append='
+...                               ^):
+  
+app/views/lists/index.html.erb:21: syntax error, unexpected '(', expecting ')'
+app/views/lists/index.html.erb:21: syntax error, unexpected ')', expecting keyword_end
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:20:52 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  Rendered lists/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/jswaters/Sites/grocery_list/app/views/lists/index.html.erb:21: syntax error, unexpected '(', expecting ')'
+...list_path, :method => :destroy(:id => list.id) );@output_buf...
+...                               ^
+/Users/jswaters/Sites/grocery_list/app/views/lists/index.html.erb:21: syntax error, unexpected ')', expecting keyword_end
+...d => :destroy(:id => list.id) );@output_buffer.safe_append='
+...                               ^):
+  
+app/views/lists/index.html.erb:21: syntax error, unexpected '(', expecting ')'
+app/views/lists/index.html.erb:21: syntax error, unexpected ')', expecting keyword_end
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:22:06 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  Rendered lists/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/jswaters/Sites/grocery_list/app/views/lists/index.html.erb:21: syntax error, unexpected '(', expecting ')'
+...> :lists}, :method => :destroy(:id => list.id) );@output_buf...
+...                               ^
+/Users/jswaters/Sites/grocery_list/app/views/lists/index.html.erb:21: syntax error, unexpected ')', expecting keyword_end
+...d => :destroy(:id => list.id) );@output_buffer.safe_append='
+...                               ^):
+  
+app/views/lists/index.html.erb:21: syntax error, unexpected '(', expecting ')'
+app/views/lists/index.html.erb:21: syntax error, unexpected ')', expecting keyword_end
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:22:20 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/lists" for 127.0.0.1 at 2017-07-08 22:22:23 -0400
+Processing by ListsController#create as HTML
+  Parameters: {"authenticity_token"=>"a7htPlRNPHfctuUTWMk7LUudc+paC231wDZxdLGTZjF4Ze7yHnFPnqJ3ouEm9fibmq88I6+Uzdbc7ZUfFqvWvQ=="}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: list):
+  
+app/controllers/lists_controller.rb:51:in `list_params'
+app/controllers/lists_controller.rb:17:in `create'
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:23:04 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 26ms (Views: 23.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/lists" for 127.0.0.1 at 2017-07-08 22:23:10 -0400
+Processing by ListsController#create as HTML
+  Parameters: {"authenticity_token"=>"TjtDvk31VPuWrgSoI9TJjhDRf7+OSZwTGS0EdvAhGkZd5sByB8knEuhvQ1pd6Ao4weMwdnvWPDAF9uAdVxmqyg=="}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: list):
+  
+app/controllers/lists_controller.rb:51:in `list_params'
+app/controllers/lists_controller.rb:17:in `create'
+Started POST "/lists" for 127.0.0.1 at 2017-07-08 22:23:26 -0400
+Processing by ListsController#create as HTML
+  Parameters: {"authenticity_token"=>"TjtDvk31VPuWrgSoI9TJjhDRf7+OSZwTGS0EdvAhGkZd5sByB8knEuhvQ1pd6Ao4weMwdnvWPDAF9uAdVxmqyg=="}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: list):
+  
+app/controllers/lists_controller.rb:51:in `list_params'
+app/controllers/lists_controller.rb:17:in `create'
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:23:30 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  Rendered lists/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/jswaters/Sites/grocery_list/app/views/lists/index.html.erb:21: syntax error, unexpected '(', expecting ')'
+...> :lists}, :method => :destroy(list.id) );@output_buffer.saf...
+...                               ^
+/Users/jswaters/Sites/grocery_list/app/views/lists/index.html.erb:21: syntax error, unexpected ')', expecting keyword_end
+... :method => :destroy(list.id) );@output_buffer.safe_append='
+...                               ^):
+  
+app/views/lists/index.html.erb:21: syntax error, unexpected '(', expecting ')'
+app/views/lists/index.html.erb:21: syntax error, unexpected ')', expecting keyword_end
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:23:55 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 25ms (Views: 22.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:24:00 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 32ms (Views: 30.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/lists" for 127.0.0.1 at 2017-07-08 22:24:01 -0400
+Processing by ListsController#create as HTML
+  Parameters: {"authenticity_token"=>"i6yGy+q/fDpvDDZ48zYje/D/PI+XW2HUPJYtPqN/Yfm7SXxS5EWZJ+aw+vXahs1QhU0EB7Ca8yqJouTeeE1VkQ=="}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.2) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.2) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.2) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.2) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.2) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.2) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.2) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.2) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.2) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.2) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.2) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/lists" for 127.0.0.1 at 2017-07-08 22:24:06 -0400
+Processing by ListsController#create as HTML
+  Parameters: {"authenticity_token"=>"nZd//T+StSp4iQ5zPveKlS7IK8A0CJKT8zphvTbQJr+OSvwxda7GwwZISYFAy0kj//pkCcGXMrDv4YXWkeiWMw=="}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: list):
+  
+app/controllers/lists_controller.rb:51:in `list_params'
+app/controllers/lists_controller.rb:17:in `create'
+Started POST "/lists" for 127.0.0.1 at 2017-07-08 22:25:09 -0400
+Processing by ListsController#create as HTML
+  Parameters: {"authenticity_token"=>"nZd//T+StSp4iQ5zPveKlS7IK8A0CJKT8zphvTbQJr+OSvwxda7GwwZISYFAy0kj//pkCcGXMrDv4YXWkeiWMw=="}
+Completed 400 Bad Request in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: list):
+  
+app/controllers/lists_controller.rb:52:in `list_params'
+app/controllers/lists_controller.rb:17:in `create'
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:25:19 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.8ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 40ms (Views: 34.8ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:25:22 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/lists" for 127.0.0.1 at 2017-07-08 22:25:25 -0400
+Processing by ListsController#create as HTML
+  Parameters: {"authenticity_token"=>"mA8SqcekET4ChILi2I4j7SxLAAnATL8e2qoa0lxW/TmL0pFljZhi13xFxRCmsuBb/XlPwDXTHz3Gcf65+25NtQ=="}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: list):
+  
+app/controllers/lists_controller.rb:52:in `list_params'
+app/controllers/lists_controller.rb:17:in `create'
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:26:29 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 24ms (Views: 21.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/lists" for 127.0.0.1 at 2017-07-08 22:26:31 -0400
+Processing by ListsController#create as HTML
+  Parameters: {"authenticity_token"=>"lN9AfwgBVEPwKdX3Wwa+fbFSJowoUdRF2kTi9T4RHNeHAsOzQj0nqo7okgUlOn3LYGBpRd3OdGbGnwaemSmsWw=="}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: list):
+  
+app/controllers/lists_controller.rb:52:in `list_params'
+app/controllers/lists_controller.rb:17:in `create'
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:27:50 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 23ms (Views: 21.2ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/lists/4/delete" for 127.0.0.1 at 2017-07-08 22:27:52 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/lists/4/delete"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started DELETE "/lists/4/delete" for 127.0.0.1 at 2017-07-08 22:28:40 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/lists/4/delete"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:29:17 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 37ms (Views: 27.6ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/lists/4/delete" for 127.0.0.1 at 2017-07-08 22:29:19 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/lists/4/delete"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:29:29 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 26ms (Views: 24.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/lists/4" for 127.0.0.1 at 2017-07-08 22:29:30 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/lists/4"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/lists/4" for 127.0.0.1 at 2017-07-08 22:31:16 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/lists/4"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:31:21 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 24ms (Views: 21.7ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/lists?id=4" for 127.0.0.1 at 2017-07-08 22:31:23 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/lists"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/lists/4/edit" for 127.0.0.1 at 2017-07-08 22:31:26 -0400
+Processing by ListsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT  `lists`.* FROM `lists` WHERE `lists`.`id` = 4 LIMIT 1[0m
+  Rendering lists/edit.html.erb within layouts/application
+  Rendered lists/edit.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 31ms (Views: 27.2ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/lists/4" for 127.0.0.1 at 2017-07-08 22:31:32 -0400
+Processing by ListsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"69I3dM1h4JSpTsdCmvji/aQW+ft4YPUPU/EabcgFeSy7L5AHs9Fqa4D2fz3aaYNm0KZMzHUoRYZXYA+vegGmmg==", "list"=>{"name"=>"list to delete"}, "commit"=>"Update List", "id"=>"4"}
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT  `lists`.* FROM `lists` WHERE `lists`.`id` = 4 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE `lists` SET `name` = 'list to delete', `updated_at` = '2017-07-09 02:31:32' WHERE `lists`.`id` = 4[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/lists.4
+Completed 302 Found in 5ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/lists.4" for 127.0.0.1 at 2017-07-08 22:31:32 -0400
+Processing by ListsController#index as 
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 41ms (Views: 29.8ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/lists?id=4" for 127.0.0.1 at 2017-07-08 22:31:33 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/lists"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started DELETE "/lists?id=4" for 127.0.0.1 at 2017-07-08 22:33:24 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/lists"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:33:28 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 22ms (Views: 20.2ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/lists" for 127.0.0.1 at 2017-07-08 22:33:29 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/lists"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started DELETE "/lists" for 127.0.0.1 at 2017-07-08 22:33:42 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/lists"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:33:44 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (8.4ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `to_model' for #<List::ActiveRecord_Relation:0x007fcc726612f0>
+Did you mean?  to_xml):
+    18: 
+    19: 				<td><%= link_to(list.name, edit_list_path(list.id), :class => 'action edit') %></td>
+    20: 				<td>
+    21: 					<%= button_to "X", @lists, :confirm => "Are you sure?", :method => :delete %>
+    22: 					<%= link_to("X", '#', :class => 'action delete') %>
+    23: 			</tr>
+    24: 			<% end %>
+  
+app/views/lists/index.html.erb:21:in `block in _app_views_lists_index_html_erb___3518462442649615481_70258034658700'
+app/views/lists/index.html.erb:15:in `_app_views_lists_index_html_erb___3518462442649615481_70258034658700'
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:34:13 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  Rendered lists/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/jswaters/Sites/grocery_list/app/views/lists/index.html.erb:21: syntax error, unexpected ','
+...pend=( button_to "X", @lists, , delete );@output_buffer.safe...
+...                               ^):
+  
+app/views/lists/index.html.erb:21: syntax error, unexpected ','
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:34:28 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (203.0ms)
+Completed 500 Internal Server Error in 209ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `delete' for #<#<Class:0x007fcc7ab291e0>:0x007fcc76c89e30>):
+    18: 
+    19: 				<td><%= link_to(list.name, edit_list_path(list.id), :class => 'action edit') %></td>
+    20: 				<td>
+    21: 					<%= button_to "X", @lists, delete %>
+    22: 					<%= link_to("X", '#', :class => 'action delete') %>
+    23: 			</tr>
+    24: 			<% end %>
+  
+app/views/lists/index.html.erb:21:in `block in _app_views_lists_index_html_erb___3518462442649615481_70258071459080'
+app/views/lists/index.html.erb:15:in `_app_views_lists_index_html_erb___3518462442649615481_70258071459080'
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:34:42 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (8.1ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "delete":String):
+    18: 
+    19: 				<td><%= link_to(list.name, edit_list_path(list.id), :class => 'action edit') %></td>
+    20: 				<td>
+    21: 					<%= button_to "X", @lists, 'delete' %>
+    22: 					<%= link_to("X", '#', :class => 'action delete') %>
+    23: 			</tr>
+    24: 			<% end %>
+  
+app/views/lists/index.html.erb:21:in `block in _app_views_lists_index_html_erb___3518462442649615481_70258052734180'
+app/views/lists/index.html.erb:15:in `_app_views_lists_index_html_erb___3518462442649615481_70258052734180'
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:34:55 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for :delete:Symbol):
+    18: 
+    19: 				<td><%= link_to(list.name, edit_list_path(list.id), :class => 'action edit') %></td>
+    20: 				<td>
+    21: 					<%= button_to "X", @lists, :delete %>
+    22: 					<%= link_to("X", '#', :class => 'action delete') %>
+    23: 			</tr>
+    24: 			<% end %>
+  
+app/views/lists/index.html.erb:21:in `block in _app_views_lists_index_html_erb___3518462442649615481_70258082121940'
+app/views/lists/index.html.erb:15:in `_app_views_lists_index_html_erb___3518462442649615481_70258082121940'
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:35:13 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for :destroy:Symbol):
+    18: 
+    19: 				<td><%= link_to(list.name, edit_list_path(list.id), :class => 'action edit') %></td>
+    20: 				<td>
+    21: 					<%= button_to "X", @lists, :destroy %>
+    22: 					<%= link_to("X", '#', :class => 'action delete') %>
+    23: 			</tr>
+    24: 			<% end %>
+  
+app/views/lists/index.html.erb:21:in `block in _app_views_lists_index_html_erb___3518462442649615481_70258022386660'
+app/views/lists/index.html.erb:15:in `_app_views_lists_index_html_erb___3518462442649615481_70258022386660'
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:36:57 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 40ms (Views: 31.1ms | ActiveRecord: 1.4ms)
+
+
+Started DELETE "/lists/4" for 127.0.0.1 at 2017-07-08 22:37:01 -0400
+Processing by ListsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ApfSaqeX+9z7GQZtEn7/91v4fsiEFzcanwofIUh4XMQRSlGm7auINYXYQZ9sQjxBisoxAXGIlzmD0ftK70DsSA==", "id"=>"4"}
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT  `lists`.* FROM `lists` WHERE `lists`.`id` = 4 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM `lists_users` WHERE `lists_users`.`list_id` = 4[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM `lists` WHERE `lists`.`id` = 4[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/lists/4
+Completed 302 Found in 22ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/lists/4" for 127.0.0.1 at 2017-07-08 22:37:01 -0400
+Processing by ListsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT  `lists`.* FROM `lists` WHERE `lists`.`id` = 4 LIMIT 1[0m
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find List with 'id'=4):
+  
+app/controllers/lists_controller.rb:8:in `show'
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT  `lists`.* FROM `lists` LIMIT 11[0m
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT  `lists`.* FROM `lists` WHERE `lists`.`id` = 4 LIMIT 1[0m
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT  `lists`.* FROM `lists` WHERE `lists`.`id` = 5 LIMIT 1[0m
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:37:46 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:38:14 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/lists/5" for 127.0.0.1 at 2017-07-08 22:38:18 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/lists/5"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:38:35 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"lists"}, missing required keys: [:id]):
+    18: 
+    19: 				<td><%= link_to(list.name, edit_list_path(list.id), :class => 'action edit') %></td>
+    20: 				<td>
+    21: 					<%= link_to "X", list_path, method: :destroy, data: { confirm: "You sure?" } %>
+    22: 					<%= link_to("X", '#', :class => 'action delete') %>
+    23: 			</tr>
+    24: 			<% end %>
+  
+app/views/lists/index.html.erb:21:in `block in _app_views_lists_index_html_erb___3518462442649615481_70258102266560'
+app/views/lists/index.html.erb:15:in `_app_views_lists_index_html_erb___3518462442649615481_70258102266560'
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:38:55 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.8ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 30ms (Views: 27.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:38:58 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 23ms (Views: 20.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/lists/5" for 127.0.0.1 at 2017-07-08 22:39:04 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/lists/5"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:39:07 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 24ms (Views: 21.9ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT  `lists`.* FROM `lists` WHERE `lists`.`id` = 5 LIMIT 1[0m
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT  `lists`.* FROM `lists` WHERE `lists`.`id` = 4 LIMIT 1[0m
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:39:26 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/lists/5" for 127.0.0.1 at 2017-07-08 22:39:29 -0400
+Processing by ListsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"TN3lWD6cyOHjGVEwUuLY3mMhqJU3JZln3BcVxAuTvj5fAGaUdKC7CJ3YFsIs3htoshPnXMK6OUTAzPGvrKsOsg==", "id"=>"5"}
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT  `lists`.* FROM `lists` WHERE `lists`.`id` = 5 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM `lists_users` WHERE `lists_users`.`list_id` = 5[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM `lists` WHERE `lists`.`id` = 5[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/lists/5
+Completed 302 Found in 5ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/lists/5" for 127.0.0.1 at 2017-07-08 22:39:29 -0400
+Processing by ListsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT  `lists`.* FROM `lists` WHERE `lists`.`id` = 5 LIMIT 1[0m
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find List with 'id'=5):
+  
+app/controllers/lists_controller.rb:8:in `show'
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT  `lists`.* FROM `lists` WHERE `lists`.`id` = 5 LIMIT 1[0m
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:39:37 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 27ms (Views: 24.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:40:17 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:40:24 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 22ms (Views: 19.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:41:05 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (9.6ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `to_model' for #<List::ActiveRecord_Relation:0x007fcc7258bf88>
+Did you mean?  to_xml):
+    18: 
+    19: 				<td><%= link_to(list.name, edit_list_path(list.id), :class => 'action edit') %></td>
+    20: 				<td>
+    21: 					<%= link_to "X", @lists, method: :delete, data: { confirm: "You sure?" } %>
+    22: 			</tr>
+    23: 			<% end %>
+    24: 		</table>
+  
+app/views/lists/index.html.erb:21:in `block in _app_views_lists_index_html_erb___3518462442649615481_70258034215520'
+app/views/lists/index.html.erb:15:in `_app_views_lists_index_html_erb___3518462442649615481_70258034215520'
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:41:24 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (194.8ms)
+Completed 500 Internal Server Error in 200ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `lists' for #<#<Class:0x007fcc72773bc0>:0x007fcc7a2ac2d8>
+Did you mean?  list
+               @lists):
+    18: 
+    19: 				<td><%= link_to(list.name, edit_list_path(list.id), :class => 'action edit') %></td>
+    20: 				<td>
+    21: 					<%= link_to "X", lists, method: :delete, data: { confirm: "You sure?" } %>
+    22: 			</tr>
+    23: 			<% end %>
+    24: 		</table>
+  
+app/views/lists/index.html.erb:21:in `block in _app_views_lists_index_html_erb___3518462442649615481_70258099840600'
+app/views/lists/index.html.erb:15:in `_app_views_lists_index_html_erb___3518462442649615481_70258099840600'
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:41:40 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `to_model' for #<List::ActiveRecord_Relation:0x007fcc7a0a89f0>
+Did you mean?  to_xml):
+    18: 
+    19: 				<td><%= link_to(list.name, edit_list_path(list.id), :class => 'action edit') %></td>
+    20: 				<td>
+    21: 					<%= link_to "X", @lists, method: :delete, data: { confirm: "You sure?" } %>
+    22: 			</tr>
+    23: 			<% end %>
+    24: 		</table>
+  
+app/views/lists/index.html.erb:21:in `block in _app_views_lists_index_html_erb___3518462442649615481_70258098805100'
+app/views/lists/index.html.erb:15:in `_app_views_lists_index_html_erb___3518462442649615481_70258098805100'
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:41:52 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/lists/new" for 127.0.0.1 at 2017-07-08 22:41:56 -0400
+Processing by ListsController#new as HTML
+  Rendering lists/new.html.erb within layouts/application
+  Rendered lists/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 36ms (Views: 24.6ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/lists" for 127.0.0.1 at 2017-07-08 22:41:59 -0400
+Processing by ListsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wNcPV48rwLI+8AvoxqBJKcO+EIo3yakqqtdqF1fzC7V2oY6SiOvn/BswWjJd1gThGOKYieHt22wcf0pcIXvDfA==", "list"=>{"name"=>"List to delete"}, "commit"=>"Create List"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `lists` (`name`, `created_at`, `updated_at`) VALUES ('List to delete', '2017-07-09 02:41:59', '2017-07-09 02:41:59')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/lists
+Completed 302 Found in 4ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:41:59 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 19ms (Views: 17.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-07-08 22:42:16 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` ORDER BY id ASC[0m
+  Rendered users/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 29ms (Views: 25.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2017-07-08 22:42:19 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` INNER JOIN `lists_users` ON `lists`.`id` = `lists_users`.`list_id` WHERE `lists_users`.`user_id` = 1[0m
+  [1m[36mSection Load (0.3ms)[0m  [1m[34mSELECT `sections`.* FROM `sections` WHERE `sections`.`list_id` = 1[0m
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`section_id` = 1[0m
+  Rendered users/show.html.erb within layouts/application (39.4ms)
+Completed 200 OK in 64ms (Views: 55.4ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:42:27 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:43:00 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"lists"}, missing required keys: [:id]):
+    18: 
+    19: 				<td><%= link_to(list.name, edit_list_path(list.id), :class => 'action edit') %></td>
+    20: 				<td>
+    21: 					<%= link_to "X", list_path, method: :delete, data: { confirm: "You sure?" } %>
+    22: 			</tr>
+    23: 			<% end %>
+    24: 		</table>
+  
+app/views/lists/index.html.erb:21:in `block in _app_views_lists_index_html_erb___3518462442649615481_70258034035060'
+app/views/lists/index.html.erb:15:in `_app_views_lists_index_html_erb___3518462442649615481_70258034035060'
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:43:21 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 23ms (Views: 21.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:44:12 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/lists/6" for 127.0.0.1 at 2017-07-08 22:44:16 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/lists/6"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:44:20 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 26ms (Views: 23.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:44:44 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 27ms (Views: 24.4ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/lists/6" for 127.0.0.1 at 2017-07-08 22:44:46 -0400
+Processing by ListsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+dGMOXINDiPgWZ9kjJKZy0LXax/d5lHG9NmO5Ex2ytjqDA/1ODF9yp6Y2Jbyrlp9k+Uk1ih58eXoAmqP6056VA==", "id"=>"6"}
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT  `lists`.* FROM `lists` WHERE `lists`.`id` = 6 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM `lists_users` WHERE `lists_users`.`list_id` = 6[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM `lists` WHERE `lists`.`id` = 6[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/lists/6
+Completed 302 Found in 6ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/lists/6" for 127.0.0.1 at 2017-07-08 22:44:46 -0400
+Processing by ListsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT  `lists`.* FROM `lists` WHERE `lists`.`id` = 6 LIMIT 1[0m
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find List with 'id'=6):
+  
+app/controllers/lists_controller.rb:8:in `show'
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:44:54 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:49:05 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 44ms (Views: 33.7ms | ActiveRecord: 1.5ms)
+
+
+Started DELETE "/lists/3" for 127.0.0.1 at 2017-07-08 22:49:09 -0400
+Processing by ListsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"XBUI2Av3X4v1/KSts0qegavitA4p0qvEWf/efDPOqqhPyIsUQcssYos941/Ndl03etD7x9xNC+dFJDoXlPYaJA==", "id"=>"3"}
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT  `lists`.* FROM `lists` WHERE `lists`.`id` = 3 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM `lists_users` WHERE `lists_users`.`list_id` = 3[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM `lists` WHERE `lists`.`id` = 3[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/lists/3
+Completed 302 Found in 16ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/lists/3" for 127.0.0.1 at 2017-07-08 22:49:09 -0400
+Processing by ListsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT  `lists`.* FROM `lists` WHERE `lists`.`id` = 3 LIMIT 1[0m
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find List with 'id'=3):
+  
+app/controllers/lists_controller.rb:8:in `show'
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:53:25 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 45ms (Views: 35.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:58:02 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    18: 
+    19: 				<td><%= link_to(list.name, edit_list_path(list.id), :class => 'action edit') %></td>
+    20: 				<td>
+    21: 					<%= form_for(@list, :method => 'delete') do |f| %>
+    22: 						<div class='form-buttons'>
+    23: 							<%= f.submit("X") %>
+    24: 						</div>
+  
+app/views/lists/index.html.erb:21:in `block in _app_views_lists_index_html_erb___3518462442649615481_70258048236420'
+app/views/lists/index.html.erb:15:in `_app_views_lists_index_html_erb___3518462442649615481_70258048236420'
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:58:10 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 25ms (Views: 22.1ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/lists/2" for 127.0.0.1 at 2017-07-08 22:58:13 -0400
+Processing by ListsController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Sg5r9llRvpwqKc5t7Fn0HddatP2z0kBNuRcAPDzNJhFZ0+g6E23NdVToiZ+SZTerBmj7NEZN4G6lzORXm/WWnQ==", "commit"=>"X", "id"=>"2"}
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT  `lists`.* FROM `lists` WHERE `lists`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM `lists_users` WHERE `lists_users`.`list_id` = 2[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM `lists` WHERE `lists`.`id` = 2[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/lists/2
+Completed 302 Found in 16ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/lists/2" for 127.0.0.1 at 2017-07-08 22:58:13 -0400
+Processing by ListsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT  `lists`.* FROM `lists` WHERE `lists`.`id` = 2 LIMIT 1[0m
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find List with 'id'=2):
+  
+app/controllers/lists_controller.rb:8:in `show'
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:58:19 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 24ms (Views: 22.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/lists/new" for 127.0.0.1 at 2017-07-08 22:58:22 -0400
+Processing by ListsController#new as HTML
+  Rendering lists/new.html.erb within layouts/application
+  Rendered lists/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 48ms (Views: 34.1ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/lists" for 127.0.0.1 at 2017-07-08 22:58:29 -0400
+Processing by ListsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rJpqwEk2HlNvUZlxH3vUBtSEDOrZeVS0cn/I9dpiW14a7OsFTvY5HUqRyKuEDZnOD9iE6Q9dJvLE1+i+rOqTlw==", "list"=>{"name"=>"New list cause they all keep getting deleted"}, "commit"=>"Create List"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `lists` (`name`, `created_at`, `updated_at`) VALUES ('New list cause they all keep getting deleted', '2017-07-09 02:58:29', '2017-07-09 02:58:29')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/lists
+Completed 302 Found in 4ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:58:29 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/lists/7/edit" for 127.0.0.1 at 2017-07-08 22:58:31 -0400
+Processing by ListsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT  `lists`.* FROM `lists` WHERE `lists`.`id` = 7 LIMIT 1[0m
+  Rendering lists/edit.html.erb within layouts/application
+  Rendered lists/edit.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 29ms (Views: 25.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 22:58:32 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 26ms (Views: 24.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 23:01:08 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 49ms (Views: 47.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 23:01:29 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 23:02:05 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 35ms (Views: 26.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 23:02:13 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/lists/7" for 127.0.0.1 at 2017-07-08 23:02:15 -0400
+Processing by ListsController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Exdi8SZqnRvThNXzWjgNGogs0so54iEzX/XsX6sFy5UAyuE9bFbu8q1FkgEkBM6sWR6dA8x9gRBDLgg0DD17GQ==", "commit"=>"X", "id"=>"7"}
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT  `lists`.* FROM `lists` WHERE `lists`.`id` = 7 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM `lists_users` WHERE `lists_users`.`list_id` = 7[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM `lists` WHERE `lists`.`id` = 7[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/lists
+Completed 302 Found in 14ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 23:02:15 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 23ms (Views: 21.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/lists/new" for 127.0.0.1 at 2017-07-08 23:02:19 -0400
+Processing by ListsController#new as HTML
+  Rendering lists/new.html.erb within layouts/application
+  Rendered lists/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 43ms (Views: 27.6ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/lists" for 127.0.0.1 at 2017-07-08 23:02:25 -0400
+Processing by ListsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aGxxbl4IPBrj2O62jGxj8E8c3DcN0Whn8nvyvKFAKP/eGvCrWcgbVMYYv2wXGi44lEBUNNv1GiFE09L318jgNg==", "list"=>{"name"=>"lets delete a list!"}, "commit"=>"Create List"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `lists` (`name`, `created_at`, `updated_at`) VALUES ('lets delete a list!', '2017-07-09 03:02:25', '2017-07-09 03:02:25')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/lists
+Completed 302 Found in 5ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 23:02:25 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 21ms (Views: 18.9ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/lists/8" for 127.0.0.1 at 2017-07-08 23:02:27 -0400
+Processing by ListsController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3e1a+J3sk8ddhIYwqhSdCU5V2xE0HZbSPsxoYNrhoKzOMNk019DgLiNFwcLUKF6/n2eU2MGCNvEiF4wLfdkQIA==", "commit"=>"X", "id"=>"8"}
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT  `lists`.* FROM `lists` WHERE `lists`.`id` = 8 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM `lists_users` WHERE `lists_users`.`list_id` = 8[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM `lists` WHERE `lists`.`id` = 8[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/lists
+Completed 302 Found in 5ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 23:02:27 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 24ms (Views: 22.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 23:02:55 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 22ms (Views: 19.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2017-07-08 23:03:06 -0400
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT `lists`.* FROM `lists` ORDER BY id ASC[0m
+  Rendered lists/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 22ms (Views: 19.7ms | ActiveRecord: 0.3ms)
+
+
