@@ -1,5 +1,7 @@
 class ListsController < ApplicationController
 
+  layout 'test'
+
   def index
     @lists = List.sorted
   end

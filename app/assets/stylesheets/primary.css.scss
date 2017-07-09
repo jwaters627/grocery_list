@@ -1,0 +1,64 @@
+$primaryBlue: #003f87;
+
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+.listsHeader{
+	color: $primaryBlue;
+}
+
+.action{
+	font-size: 14px;
+	font-weight: 400;
+	text-decoration: none;
+
+	&:hover{
+		font-weight: 600;
+	}
+
+	&:visited{
+		color: #000;
+	}
+}
+
+.form-buttons{
+	
+}
+
+.headerContainer{
+	width: 100%;
+	box-shadow: 2px 2px 2px #ccc;
+	height: 56px;
+
+	.title{
+		margin-top: 0;
+		margin-bottom: 0;
+		padding-top: 20px;
+		margin-left: 20px;
+		display: inline-block;
+	}
+
+	.navButton{
+		display: inline-block;
+		text-decoration: none;
+		margin-left: 14px;
+
+		&:visited{
+			color: #000;
+		}
+
+		&:hover{
+			font-weight: 600;
+		}
+	}
+}
+
+.contentContainer{
+	width: 90%;
+	margin-left:5%;
+}

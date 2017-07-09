@@ -1,5 +1,7 @@
 class UsersController < ApplicationController
 
+  layout 'test'
+
   def index
     @users = User.sorted
   end
