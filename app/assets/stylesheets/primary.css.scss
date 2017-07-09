@@ -34,6 +34,7 @@ body{
 	width: 100%;
 	box-shadow: 2px 2px 2px #ccc;
 	height: 56px;
+	background-color: $primaryBlue;
 
 	.title{
 		margin-top: 0;
@@ -41,15 +42,18 @@ body{
 		padding-top: 20px;
 		margin-left: 20px;
 		display: inline-block;
+		color: #fff;
+		text-decoration: none;
 	}
 
 	.navButton{
 		display: inline-block;
 		text-decoration: none;
 		margin-left: 14px;
+		color: #fff;
 
 		&:visited{
-			color: #000;
+			color: #fff;
 		}
 
 		&:hover{
@@ -62,3 +66,101 @@ body{
 	width: 90%;
 	margin-left:5%;
 }
+
+
+@media only screen and (max-device-width: 700px){
+	.headerContainer{
+		width: 100%;
+		box-shadow: 2px 2px 2px #ccc;
+		height: 100px;
+
+		.title{
+			margin-top: 0;
+			margin-bottom: 0;
+			font-size: 4em;
+			padding-top: 10px;
+			margin-left: 20px;
+			display: inline-block;
+			color: #fff;
+		}
+
+		.navButton{
+			display: inline-block;
+			text-decoration: none;
+			margin-left: 24px;
+			font-size: 2em;
+
+
+			&:visited{
+				color: #fff;
+			}
+
+			&:hover{
+				font-weight: 600;
+			}
+		}
+	}
+
+.contentContainer{
+	width: 90%;
+	margin-left:5%;
+}
+
+.action{
+	font-size: 4em;
+	font-weight: 400;
+	text-decoration: none;
+
+		&:hover{
+			font-weight: 600;
+		}
+
+		&:visited{
+			color: #000;
+		}
+	}	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

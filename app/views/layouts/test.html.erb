@@ -9,9 +9,10 @@
   <body>
 
   	<div class='headerContainer'>
-  		<h4 class='title'>Grocery List</h4>
+  		<%= link_to("Grocery List", root_path, :class => 'title') %>
   		<%= link_to("Lists", lists_path, :class => 'navButton') %>
   		<%= link_to("Users", users_path, :class => 'navButton') %>
+  		<%= link_to("Logout", access_logout_path, :class => 'navButton') %>
   	</div>
   	<div class='contentContainer'>
 	  	<!-- before yield -->

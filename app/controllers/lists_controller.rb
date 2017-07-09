@@ -1,9 +1,12 @@
 class ListsController < ApplicationController
 
+  
+
   layout 'test'
+  before_action :confirm_logged_in
 
   def index
-    @lists = List.sorted
+    @lists = User.find(session[:user_id]).lists
   end
 
   def show
@@ -12,12 +15,12 @@ class ListsController < ApplicationController
 
   def new
     @list = List.new
-    @item = Item.new
   end
 
   def create
     @list = List.new(list_params)
     if @list.save
+      User.find(session[:user_id]).lists << @list
       redirect_to(lists_path)
     else
       render('new')

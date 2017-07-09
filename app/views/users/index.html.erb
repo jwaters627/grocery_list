@@ -5,19 +5,20 @@
 
 		<table class="listing" summary "Users user">
 			<tr class="header">
-				<th>#</th>
-				<th>User</th>
-				<th>Actions</th>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>User Name</th>
 			</tr>
 
 			<% @users.each do |user| %>
 			<tr>
-				<td><%= user.id%></td>
-				<td><%= user.first_name%></td>
+				
+				<td><%= link_to(user.first_name, user_path(user),:class => 'action show') %></td>
+				<td><%= user.last_name%></td>
+				<td><%= user.user_name%></td>
 				<td>
-					<%= link_to("Show", user_path(user), :class => 'action show') %>
-					<%= link_to("X", '#', :class => 'action delete') %>
 			</tr>
 			<% end %>
 		</table>
+		
 	</div>
