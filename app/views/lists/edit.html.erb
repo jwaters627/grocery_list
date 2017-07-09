@@ -1,2 +1,23 @@
-<h1>Lists#edit</h1>
-<p>Find me in app/views/lists/edit.html.erb</p>
+
+
+<%= link_to("<< Back to Lists", lists_path, :class => 'back_link') %>
+
+
+<div class='lists edit'>
+	<h2>Update List</h2>
+
+	<%= form_for(@list) do |f| %>
+
+		<table summary="Lists form fields">
+			<tr>
+				<th>Name</th>
+				<td><%= f.text_field(:name) %></td>
+			</tr>
+		</table>
+
+		<div class="form-buttons">
+			<%= f.submit("Update List") %>
+		</div>
+	<% end %>
+</div>
+

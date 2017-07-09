@@ -10,6 +10,7 @@ class ListsController < ApplicationController
 
   def new
     @list = List.new
+    @item = Item.new
   end
 
   def create
@@ -22,9 +23,16 @@ class ListsController < ApplicationController
   end
 
   def edit
+    @list = List.find(params[:id])
   end
 
   def update
+    @list = List.find(params[:id])
+    if @list.update_attributes(list_params)
+      redirect_to(lists_path(@list))
+    else
+      render('edit')
+    end
   end
 
   def delete

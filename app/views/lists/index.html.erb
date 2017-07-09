@@ -14,10 +14,10 @@
 
 			<% @lists.each do |list| %>
 			<tr>
-				<td><%= list.position%></td>
-				<td><%= list.name%></td>
+				<td><%= list.id%></td>
+
+				<td><%= link_to(list.name, edit_list_path(list.id), :class => 'action edit') %></td>
 				<td>
-					<%= link_to("Show", list_path(list), :class => 'action show') %>
 					<%= link_to("X", '#', :class => 'action delete') %>
 			</tr>
 			<% end %>
